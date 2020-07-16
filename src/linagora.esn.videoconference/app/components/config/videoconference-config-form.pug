@@ -1,0 +1,10 @@
+ng-form(name="conferenceConfigForm")
+  .form-title
+  .row.flex-vertical-centered
+    .col-xs-6
+      esn-form-group(label="{{ 'Jitsi HTTP URL' | translate }}", form="conferenceConfigForm")
+        input.form-control(type="url", ng-model="$ctrl.configurations.jitsiInstanceUrl.value", name="jitsiInstanceUrl", required)
+    .col-xs-6
+      esn-form-group(label="{{ 'Conference application URL' | translate }}", form="conferenceConfigForm")
+        input.form-control(type="url", ng-model="$ctrl.configurations.openPaasVideoconferenceAppUrl.value", name="openPaasVideoconferenceAppUrl", required)
+        

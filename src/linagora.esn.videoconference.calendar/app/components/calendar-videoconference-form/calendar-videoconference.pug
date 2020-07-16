@@ -1,0 +1,41 @@
+.row.videoconference(ng-if="$ctrl.isVideoConfHostnameValid()")
+  // Case user can edit the event
+  .col-xs-12(ng-if="$ctrl.canModifyEvent")
+    .form-group
+      .input-group
+        span.input-group-addon
+          md-tooltip(md-direction="bottom" md-z-index="10000")
+            span {{ 'Video conference' | translate }}
+          i.mdi.mdi-video
+        .fg-line.select
+          md-input-container
+            md-select(ng-model="$ctrl.videoconference" ng-model-options="{getterSetter: true}" md-container-class="cal-event-edition-select-dropdown")
+              md-option(ng-value="value" ng-repeat="(key, value) in $ctrl.videoconferenceOptions")
+                span {{ value | esnI18n }}
+    .form-group.event-subelement-flex-container
+      .input-group
+        span.input-group-addon
+      div(ng-show="$ctrl.videoconference() === $ctrl.videoconferenceOptions.OPENPAAS_VIDEOCONFERENCE")
+        .input-group
+          a(
+              title="{{ $ctrl.event.xOpenpaasVideoconference }}"
+              ng-href="{{ $ctrl.event.xOpenpaasVideoconference }}"
+              target='_blank'
+              rel='noopener noreferrer'
+            )
+            | {{ 'Join the videoconference' | translate }}
+
+  // Case user cannot modify the event
+  .col-xs-12.cal-event-form-organizer(ng-if="!$ctrl.canModifyEvent && $ctrl.videoconference() === $ctrl.videoconferenceOptions.OPENPAAS_VIDEOCONFERENCE")
+    span.icon
+      md-tooltip(md-direction="bottom" md-z-index="10000")
+        span {{ 'Video conference' | translate }}
+      i.mdi.mdi-video
+    .meta
+      a(
+        title="{{ $ctrl.event.xOpenpaasVideoconference }}"
+        ng-href="{{ $ctrl.event.xOpenpaasVideoconference }}"
+        target='_blank'
+        rel='noopener noreferrer'
+      )
+        | {{ 'Join the videoconference' | translate }}
