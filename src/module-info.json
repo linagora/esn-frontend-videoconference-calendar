@@ -1,0 +1,38 @@
+{
+  "coreModules": [],
+  "dependenceModules": [
+    {
+      "name": "linagora.esn.videoconference",
+      "angularModuleName": "esn.videoconference",
+      "shortName": "videoconference",
+      "frontendRoot": "frontend/app",
+      "cssRoot": "frontend/app/styles.less",
+      "pugGlob": [
+        "/app/**/*.pug"
+      ],
+      "pugOptions": {
+        "basedir": "./node_modules/esn-frontend-common-libs/src/frontend/views"
+      },
+      "fileRoot": "frontend/app",
+      "filesGlob": [
+        "videoconference.module.js",
+        "**/!(*spec).js"
+      ]
+    },
+    {
+      "name": "linagora.esn.videoconference.calendar",
+      "angularModuleName": "esn.videoconference.calendar",
+      "shortName": "videoconference.calendar",
+      "frontendRoot": "frontend/app",
+      "cssRoot": "frontend/app/styles.less",
+      "pugGlob": [
+        "/app/**/*.pug"
+      ],
+      "fileRoot": "frontend/app",
+      "filesGlob": [
+        "videoconference-calendar.module.js",
+        "**/!(*spec).js"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "esn-frontend-videoconference-calendar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esn-frontend-common-libs": "github:openpaas-suite/esn-frontend-common-libs#main"
+  }
+}
