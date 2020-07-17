@@ -8,5 +8,4 @@ require ('./linagora.esn.videoconference.calendar/app/components/calendar-videoc
 require ('./linagora.esn.videoconference.calendar/app/components/calendar-videoconference-form/calendar-videoconference.component.js');
 require ('./linagora.esn.videoconference.calendar/app/components/calendar-videoconference-form/calendar-videoconference.constants.js');
 require ('./linagora.esn.videoconference.calendar/app/components/calendar-videoconference-form/calendar-videoconference.controller.js');
-require ('./linagora.esn.videoconference.calendar/app/components/calendar-videoconference-form/calendar-videoconference.run.js');
 require('./all.less');
