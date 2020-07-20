@@ -1,3 +1,5 @@
+require('./calendar-videoconference.constants.js');
+
 (function(angular) {
   'use strict';
 
