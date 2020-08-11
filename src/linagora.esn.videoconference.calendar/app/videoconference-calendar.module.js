@@ -11,3 +11,4 @@ require('./components/calendar-videoconference-bluebar/calendar-videoconference-
 require('./components/calendar-videoconference-form/calendar-videoconference.component.js');
 require('./components/calendar-videoconference-form/calendar-videoconference.constants.js');
 require('./components/calendar-videoconference-form/calendar-videoconference.controller.js');
+require('./videoconference-calendar.config.js');
