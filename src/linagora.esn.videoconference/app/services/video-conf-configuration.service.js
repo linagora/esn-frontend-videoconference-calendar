@@ -1,7 +1,7 @@
 angular.module('linagora.esn.videoconference')
-  .factory('VideoConfConfigurationService', VideoConfConfigurationService);
+  .factory('VideoConfConfigurationService', VideoConfConfigurationServiceFactory);
 
-function VideoConfConfigurationService(esnConfig) {
+function VideoConfConfigurationServiceFactory(esnConfig) {
 
   return {
     get: get,
