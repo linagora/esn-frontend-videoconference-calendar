@@ -21,7 +21,7 @@ describe('The calendarVideoconferenceForm component', function() {
   }
 
   beforeEach(function() {
-    module('linagora.esn.videoconference.calendar', function($provide) {
+    angular.mock.module('linagora.esn.videoconference.calendar', function($provide) {
       $provide.value('VideoConfConfigurationService', {
         getOpenPaasVideoconferenceAppUrl: function() {
           return $q.when('http://localhost/');
