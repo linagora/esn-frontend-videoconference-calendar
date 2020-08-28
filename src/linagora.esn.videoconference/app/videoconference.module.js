@@ -1,10 +1,8 @@
-(function(angular) {
-  'use strict';
+'use strict';
 
-  var MODULE_NAME = 'linagora.esn.videoconference';
+var MODULE_NAME = 'linagora.esn.videoconference';
 
-  angular.module(MODULE_NAME, ['esn.configuration']);
-})(angular);
+angular.module(MODULE_NAME, ['esn.configuration']);
 
 require('esn-frontend-common-libs/src/frontend/js/modules/config/config.module.js');
 

@@ -1,8 +1,6 @@
-(function(angular) {
-  'use strict';
+'use strict';
 
-  angular.module('linagora.esn.videoconference.calendar', ['linagora.esn.videoconference']);
-})(angular);
+angular.module('linagora.esn.videoconference.calendar', ['linagora.esn.videoconference']);
 
 require('../../linagora.esn.videoconference/app/services/video-conf-configuration.service');
 
