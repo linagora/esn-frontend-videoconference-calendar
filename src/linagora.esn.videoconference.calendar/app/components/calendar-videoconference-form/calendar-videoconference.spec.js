@@ -12,7 +12,7 @@ describe('The calendarVideoconferenceForm component', function() {
 
     var controller = $controller('calendarVideoconferenceFormController');
 
-    controller.event = {xOpenpaasVideoconference: videoConf};
+    controller.event = { xOpenpaasVideoconference: videoConf };
     controller.canModifyEvent = true;
 
     $scope.$digest();

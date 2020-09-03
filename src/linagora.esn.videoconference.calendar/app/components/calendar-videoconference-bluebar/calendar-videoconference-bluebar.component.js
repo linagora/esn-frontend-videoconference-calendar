@@ -2,7 +2,7 @@
 
 angular.module('linagora.esn.videoconference.calendar')
   .component('calendarVideoconferenceBluebar', {
-    template: require("./calendar-videoconference-bluebar.pug"),
+    template: require('./calendar-videoconference-bluebar.pug'),
     controller: 'calendarVideoconferenceBluebarController',
     bindings: {
       videoconferenceLink: '='

@@ -33,7 +33,7 @@ module.exports = function(config) {
       }
     },
 
-    reporters: singleRun ['spec'],
+    reporters: singleRun.spec,
 
     preprocessors: {
       'src/index.test.js': ['webpack']
@@ -46,6 +46,6 @@ module.exports = function(config) {
       'karma-webpack',
       'karma-spec-reporter',
       'karma-sinon-chai'
-    ],
+    ]
   });
 };

@@ -18,7 +18,7 @@ function esnI18nLoader($q) {
         return catalogs[options.key];
       });
   };
-  
+
   function getCatalogs() {
     return $q.when({});
   }

@@ -11,12 +11,12 @@ module.exports = merge(commonWebpackConfig, {
   devtool: 'source-map',
   output: {
     filename: 'bundle-test.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist')
   },
   plugins: [
     new webpack.NormalModuleReplacementPlugin(
       /node_modules\/esn-frontend-common-libs\/src\/frontend\/js\/modules\/i18n\/i18n-loader.service.js/,
       i18nLoaderMockPath
-    ),
+    )
   ]
 });
