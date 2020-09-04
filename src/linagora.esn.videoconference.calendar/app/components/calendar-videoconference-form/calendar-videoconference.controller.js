@@ -59,6 +59,6 @@ function calendarVideoconferenceFormController(uuid4, VideoConfConfigurationServ
   function _fullPath() {
     return (self.isVideoConfHostnameValid() &&
       self._videoconference !== EVENT_VIDEOCONFERENCE_OPTIONS.NO_VIDEOCONFERENCE) ?
-           self.videoConfHostname + self._roomName : undefined;
+      self.videoConfHostname + self._roomName : undefined;
   }
 }

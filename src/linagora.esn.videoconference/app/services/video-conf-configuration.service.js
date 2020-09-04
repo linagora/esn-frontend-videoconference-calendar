@@ -27,8 +27,8 @@ function VideoConfConfigurationServiceFactory(esnConfig) {
     return esnConfig('linagora.esn.videoconference.openPaasVideoconferenceAppUrl')
       .then(function(openPaasVideoconferenceAppUrl) {
         return openPaasVideoconferenceAppUrl && openPaasVideoconferenceAppUrl.endsWith('/') ?
-               openPaasVideoconferenceAppUrl :
-               openPaasVideoconferenceAppUrl + '/';
+          openPaasVideoconferenceAppUrl :
+          openPaasVideoconferenceAppUrl + '/';
       });
   }
 
