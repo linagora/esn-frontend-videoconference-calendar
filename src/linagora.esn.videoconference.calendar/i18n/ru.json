@@ -1,9 +1,11 @@
 {
-    "Please do not edit this section of the description" : "Пожалуйста, не редактируйте этот раздел описания",
-    "This event contains a videoconference": "Это мероприятие содержит видеоконференцию",
-    "Join the videoconference": "Присоединяйтесь к видеоконференции",
-    "Video conference": "Видео-конференция",
-    "No video conference": "Нет видеоконференции",
-    "OpenPaaS video conference": "Видеоконференция OpenPaaS"
+  "Copy link": "Копировать ссылку",
+  "Failed to copy the video conference link": "Не удалось скопировать ссылку на видеоконференцию",
+  "Join the video conference": "Присоединяйтесь к видеоконференции",
+  "No video conference": "Нет видеоконференции",
+  "OpenPaaS video conference": "Видеоконференция OpenPaaS",
+  "Please do not edit this section of the description": "Пожалуйста, не редактируйте этот раздел описания",
+  "This event contains a videoconference": "Это мероприятие содержит видеоконференцию",
+  "Video conference link has been copied successfully": "Ссылка на видеоконференцию успешно скопирована",
+  "Video conference": "Видео-конференция"
 }
-

@@ -13,3 +13,40 @@
     flex-grow: 1;
   }
 }
+
+.conference-btns {
+  margin-left: 12px;
+  min-width: 0;
+}
+
+.btn-row {
+  display: flex;
+
+  a {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  i {
+    padding-right: 4px;
+  }
+
+  .btn-link {
+    margin-left: 16px;
+  }
+}
+
+@media screen and (max-width: @screen-md-min) {
+  .conference-btns {
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: @screen-xs-min) {
+  .conference-btns {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
