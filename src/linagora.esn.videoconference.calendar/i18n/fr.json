@@ -1,8 +1,11 @@
 {
-    "Please do not edit this section of the description" : "N'éditez pas cette partie de la description s'il vous plait",
-    "This event contains a videoconference": "Cet événement contient une conférence vidéo",
-    "Join the videoconference": "Rejoindre la conférence vidéo",
-    "Video conference": "Vidéo conférence",
-    "No video conference": "Pas de vidéo conférence",
-    "OpenPaaS video conference": "Vidéo conférence OpenPaaS"
+  "Copy link": "Copier le lien",
+  "Failed to copy the video conference link": "Échec de la copie du lien de visioconférence",
+  "Join the video conference": "Rejoignez la visioconférence",
+  "No video conference": "Pas de vidéo conférence",
+  "OpenPaaS video conference": "Vidéo conférence OpenPaaS",
+  "Please do not edit this section of the description": "N'éditez pas cette partie de la description s'il vous plait",
+  "This event contains a videoconference": "Cet événement contient une conférence vidéo",
+  "Video conference link has been copied successfully": "Le lien de vidéoconférence a été copié avec succès",
+  "Video conference": "Vidéo conférence"
 }

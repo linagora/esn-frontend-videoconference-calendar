@@ -16,14 +16,24 @@
       .input-group
         span.input-group-addon
       div(ng-show="$ctrl.videoconference() === $ctrl.videoconferenceOptions.OPENPAAS_VIDEOCONFERENCE")
-        .input-group
-          a(
+        .conference-btns
+          .row.btn-row
+            a.btn.btn-primary(
               title="{{ $ctrl.event.xOpenpaasVideoconference }}"
               ng-href="{{ $ctrl.event.xOpenpaasVideoconference }}"
               target='_blank'
               rel='noopener noreferrer'
             )
-            | {{ 'Join the videoconference' | translate }}
+              i.mdi.mdi-open-in-new
+              | {{ 'Join the video conference' | translate }}
+            a.btn.btn-link(
+              ngclipboard,
+              data-clipboard-text="{{ $ctrl.event.xOpenpaasVideoconference }}",
+              ngclipboard-success="$ctrl.onLinkCopySuccess();",
+              ngclipboard-error="$ctrl.onLinkCopyError();"
+            )
+              i.mdi.mdi-content-copy
+              | {{ 'Copy link' | translate }}
 
   // Case user cannot modify the event
   .col-xs-12.cal-event-form-organizer(ng-if="!$ctrl.canModifyEvent && $ctrl.videoconference() === $ctrl.videoconferenceOptions.OPENPAAS_VIDEOCONFERENCE")
@@ -31,11 +41,21 @@
       md-tooltip(md-direction="bottom" md-z-index="10000")
         span {{ 'Video conference' | translate }}
       i.mdi.mdi-video
-    .meta
-      a(
-        title="{{ $ctrl.event.xOpenpaasVideoconference }}"
-        ng-href="{{ $ctrl.event.xOpenpaasVideoconference }}"
-        target='_blank'
-        rel='noopener noreferrer'
-      )
-        | {{ 'Join the videoconference' | translate }}
+    .meta.conference-btns
+      .row.btn-row
+        a.btn.btn-primary(
+          title="{{ $ctrl.event.xOpenpaasVideoconference }}"
+          ng-href="{{ $ctrl.event.xOpenpaasVideoconference }}"
+          target='_blank'
+          rel='noopener noreferrer'
+        )
+          i.mdi.mdi-open-in-new
+          | {{ 'Join the video conference' | translate }}
+        a.btn.btn-link(
+          ngclipboard,
+          data-clipboard-text="{{ $ctrl.event.xOpenpaasVideoconference }}",
+          ngclipboard-success="$ctrl.onLinkCopySuccess();",
+          ngclipboard-error="$ctrl.onLinkCopyError();"
+        )
+          i.mdi.mdi-content-copy
+          | {{ 'Copy link' | translate }}

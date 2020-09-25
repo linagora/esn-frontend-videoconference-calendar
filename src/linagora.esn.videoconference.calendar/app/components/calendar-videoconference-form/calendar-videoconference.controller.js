@@ -5,7 +5,7 @@ require('./calendar-videoconference.constants.js');
 angular.module('linagora.esn.videoconference.calendar')
   .controller('calendarVideoconferenceFormController', calendarVideoconferenceFormController);
 
-function calendarVideoconferenceFormController(uuid4, VideoConfConfigurationService, EVENT_VIDEOCONFERENCE_OPTIONS) {
+function calendarVideoconferenceFormController(notificationFactory, uuid4, VideoConfConfigurationService, EVENT_VIDEOCONFERENCE_OPTIONS) {
   var self = this;
 
   self.videoconferenceOptions = EVENT_VIDEOCONFERENCE_OPTIONS;
@@ -17,6 +17,8 @@ function calendarVideoconferenceFormController(uuid4, VideoConfConfigurationServ
   self.isVideoConfHostnameValid = isVideoConfHostnameValid;
   self.roomName = roomName;
   self.videoconference = videoconference;
+  self.onLinkCopySuccess = onLinkCopySuccess;
+  self.onLinkCopyError = onLinkCopyError;
 
   function $onInit() {
     return VideoConfConfigurationService.getOpenPaasVideoconferenceAppUrl()
@@ -60,5 +62,13 @@ function calendarVideoconferenceFormController(uuid4, VideoConfConfigurationServ
     return (self.isVideoConfHostnameValid() &&
       self._videoconference !== EVENT_VIDEOCONFERENCE_OPTIONS.NO_VIDEOCONFERENCE) ?
       self.videoConfHostname + self._roomName : undefined;
+  }
+
+  function onLinkCopySuccess() {
+    notificationFactory.weakSuccess('', 'Video conference link has been copied successfully');
+  }
+
+  function onLinkCopyError() {
+    notificationFactory.strongError('', 'Failed to copy the video conference link');
   }
 }

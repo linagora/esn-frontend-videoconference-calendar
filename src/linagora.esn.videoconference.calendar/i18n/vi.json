@@ -1,8 +1,11 @@
 {
-    "Please do not edit this section of the description" : "Xin vui lòng không chỉnh sửa phần này của mô tả",
-    "This event contains a videoconference": "Sự kiện này có chứa cầu truyền hình",
-    "Join the videoconference": "Tham gia hội nghị truyền hình",
-    "Video conference": "Video conference",
-    "No video conference": "Không có hội nghị video",
-    "OpenPaaS video conference": "Hội nghị video OpenPaaS"
+  "Copy link": "Sao chép đường dẫn",
+  "Failed to copy the video conference link": "Không sao chép được liên kết hội nghị truyền hình",
+  "Join the video conference": "Tham gia hội nghị truyền hình",
+  "No video conference": "Không có hội nghị video",
+  "OpenPaaS video conference": "Hội nghị video OpenPaaS",
+  "Please do not edit this section of the description": "Xin vui lòng không chỉnh sửa phần này của mô tả",
+  "This event contains a videoconference": "Sự kiện này có chứa cầu truyền hình",
+  "Video conference link has been copied successfully": "Liên kết hội nghị truyền hình đã được sao chép thành công",
+  "Video conference": "Video conference"
 }

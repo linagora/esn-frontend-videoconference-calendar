@@ -1,8 +1,10 @@
 'use strict';
 
-angular.module('linagora.esn.videoconference.calendar', ['linagora.esn.videoconference']);
+angular.module('linagora.esn.videoconference.calendar', ['linagora.esn.videoconference', 'ngclipboard', 'esn.notification']);
 
 require('../../linagora.esn.videoconference/app/services/video-conf-configuration.service');
+require('esn-frontend-common-libs/src/frontend/components/ngclipboard/dist/ngclipboard.js');
+require('esn-frontend-common-libs/src/frontend/js/modules/notification.js');
 
 require('./components/calendar-videoconference-bluebar/calendar-videoconference-bluebar.component.js');
 require('./components/calendar-videoconference-bluebar/calendar-videoconference-bluebar.controller.js');
