@@ -25,7 +25,8 @@
               rel='noopener noreferrer'
             )
               i.mdi.mdi-open-in-new
-              | {{ 'Join the video conference' | translate }}
+              span.hidden-xs {{ 'Join the video conference' | translate }}
+              span.hidden-lg {{ 'Join now' | translate }}
             a.btn.btn-link(
               ngclipboard,
               data-clipboard-text="{{ $ctrl.event.xOpenpaasVideoconference }}",
@@ -50,7 +51,8 @@
           rel='noopener noreferrer'
         )
           i.mdi.mdi-open-in-new
-          | {{ 'Join the video conference' | translate }}
+          span.hidden-xs {{ 'Join the video conference' | translate }}
+          span.hidden-lg {{ 'Join now' | translate }}        
         a.btn.btn-link(
           ngclipboard,
           data-clipboard-text="{{ $ctrl.event.xOpenpaasVideoconference }}",
