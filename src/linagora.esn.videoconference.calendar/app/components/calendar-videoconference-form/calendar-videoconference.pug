@@ -7,7 +7,7 @@
           md-tooltip(md-direction="bottom" md-z-index="10000")
             span {{ 'Video conference' | translate }}
           i.mdi.mdi-video
-        .fg-line.select
+        .fg-line
           md-input-container
             md-select(ng-model="$ctrl.videoconference" ng-model-options="{getterSetter: true}" md-container-class="cal-event-edition-select-dropdown")
               md-option(ng-value="value" ng-repeat="(key, value) in $ctrl.videoconferenceOptions")
