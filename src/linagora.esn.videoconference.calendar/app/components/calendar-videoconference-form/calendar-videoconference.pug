@@ -36,7 +36,7 @@
               | {{ 'Copy link' | translate }}
 
   // Case user cannot modify the event
-  .col-xs-12.cal-event-form-organizer(ng-if="!$ctrl.canModifyEvent && $ctrl.videoconference() === $ctrl.videoconferenceOptions.OPENPAAS_VIDEOCONFERENCE")
+  .col-xs-12.video-conference-no-edit(ng-if="!$ctrl.canModifyEvent && $ctrl.videoconference() === $ctrl.videoconferenceOptions.OPENPAAS_VIDEOCONFERENCE")
     span.icon
       md-tooltip(md-direction="bottom" md-z-index="10000")
         span {{ 'Video conference' | translate }}
