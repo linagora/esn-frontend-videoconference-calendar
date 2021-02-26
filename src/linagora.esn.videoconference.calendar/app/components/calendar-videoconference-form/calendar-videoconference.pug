@@ -9,7 +9,7 @@
           i.mdi.mdi-video
         .fg-line
           md-input-container
-            md-select(ng-model="$ctrl.videoconference" ng-model-options="{getterSetter: true}" md-container-class="cal-event-edition-select-dropdown")
+            md-select(ng-model="$ctrl.videoconference" ng-model-options="{getterSetter: true}" md-container-class="cal-event-edition-select-dropdown", aria-label="videoconference provider")
               md-option(ng-value="value" ng-repeat="(key, value) in $ctrl.videoconferenceOptions")
                 span {{ value | esnI18n }}
     .form-group.event-subelement-flex-container(ng-show="$ctrl.videoconference() === $ctrl.videoconferenceOptions.OPENPAAS_VIDEOCONFERENCE")
